@@ -80,24 +80,6 @@
   height: 43px;
 }
 
-.free__profile {
-  position: relative;
-  width: 43px;
-  height: 43px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 24px 0 7px;
-}
-
-.free__list_profile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .free__name {
   font-size: 14px;
   margin-right: 25px;
