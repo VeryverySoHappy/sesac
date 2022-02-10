@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SSAC || Main</title>
+	<title>SSAC || </title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/자유게시판.css">
 </head>
 <body>
 	<div class="wrap">
@@ -29,23 +30,23 @@
 				</label>
 			</div>
 		</header>
-		<!-- 사이드바 메뉴 start-->
+		<!-- 사이드바 메뉴 start--> 
 		<div class="sidebar_content">
 			<ul class="sidebar_wrap">
-				<li>
-					<ul class="items">
-						<li><a href=""><i class="fas fa-user fa-2x" style="user-select: auto;"></i></a></li>
-						<li>
+				<li class="sidebar_list">
+					<ul class="sidebar_btns">
+						<li class="sidebar_btn"><a href=""><i class="fas fa-user fa-2x" style="user-select: auto;"></i></a></li>
+						<li class="sidebar_btn">
 							<label for="closeBtn" class="close_label">
-								<i class="fas fa-times" style="user-select: auto;"></i>
+								<i class="fas fa-times fa-2x" style="user-select: auto;"></i>
 							</label>
 							<input type="checkbox" id="closeBtn" class="close_btn">
 						</li>
 					</ul>
 				</li>
-				<li class="list"><a href="#">자유게시판</a></li>
-				<li class="list"><a href="#">PROJECT</a></li>
-				<li class="list"><a href="#">강의평가</a></li>
+				<li class="sidebar_list"><a href="#">자유게시판</a></li>
+				<li class="sidebar_list"><a href="#">PROJECT</a></li>
+				<li class="sidebar_list"><a href="#">강의평가</a></li>
 				<li class="bottom">
 					<div>Team BigDoor</div>
 					<a href="#">
@@ -64,15 +65,12 @@
 	<!-- inner start -->
 	<div class="inner">
 
+
+
+
+
+		
 		<!-- 본문내용 작성하기 -->
-    <h2>자유게시판</h2>
-    <input type="text" value="">
-    <input type="submit" value="글쓰기">
-
-
-
-
-
 
 
 
@@ -86,18 +84,25 @@
     const sidebarMenu = document.querySelector('.sidebar_content')
     const backgroundColor = document.querySelector('.background');
     const mypageBtn = document.querySelector('.my_page');
-    
-    closeBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = -309 + 'px'
+
+		openBtn.addEventListener('click', () => {
+		sidebarMenu.style.right = 0 + 'px'
+		backgroundColor.style.opacity = 1;
+		backgroundColor.style.visibility = 'visible';
+		})
+
+		closeBtn.addEventListener('click', () => {
+    sidebarMenu.style.right = -405 + 'px'
     backgroundColor.style.opacity = 0;
     backgroundColor.style.visibility = 'hidden';
     })
     
-    openBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = 0 + 'px'
-    backgroundColor.style.opacity = 1;
-    backgroundColor.style.visibility = 'visible';
+		backgroundColor.addEventListener('click', () => {
+    sidebarMenu.style.right = -405 + 'px'
+    backgroundColor.style.opacity = 0;
+    backgroundColor.style.visibility = 'hidden';
     })
+
   </script>
 </body>
 </html>

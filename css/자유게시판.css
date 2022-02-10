@@ -1,0 +1,135 @@
+.inner {
+  margin-top: 200px;
+  height: 647px;
+  padding: 0 0px 0 187px;
+}
+
+.free__title_and_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  width: 630px;
+}
+
+.free__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.inner .free__search {
+  width: 197px;
+  height: 47px;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 50px;
+  background-image: url(../icon-find.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+}
+
+.free__btn {
+  width: 88px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background: #9DC1BA;
+}
+
+.free__text_list {
+  width: 925px;
+  height: 450px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* 스크롤바 크기 start */
+.free__text_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 스크롤바 배경 start */
+.free__text_list::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* 스크롤바 색상 */
+.free__text_list::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 5px;
+}
+
+
+
+.free__list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 630px;
+  height: 60px;
+  background: #E4E4E4;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.free__list_img {
+  margin-left: 7px;
+  width: 43px;
+  height: 43px;
+}
+
+.free__profile {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 24px 0 7px;
+}
+
+.free__list_profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.free__name {
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.free__text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 333px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 29px;
+  margin-right: 28px;
+}
+
+.free_comment {
+  color: #ffa8a8;
+}
+
+.free__time {
+  margin-right: 52px;
+}
+
+.free__back_white {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 1109px;
+  height: 150px;
+  z-index: 10;
+}
