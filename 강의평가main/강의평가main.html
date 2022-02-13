@@ -8,10 +8,6 @@
 	<title>SSAC || </title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../header/header.css">
-	<link rel="stylesheet" href="강의평가main.css">
 </head>
 <body>
 	<div class="wrap">
@@ -55,7 +51,6 @@
 				</li>
 			</ul>
 		</div>
-		<!-- <label for="sidebar"></label> -->
 	<!-- 사이드바 메뉴 end-->
 	
 	<!-- 메뉴 눌렀을때 배경부분 어두운 색으로 바뀌는 영역 -->
@@ -65,6 +60,7 @@
 	<!-- inner start -->
 	<div class="inner">
     <div class="top_content_wrap">
+			<!-- 강의평가와 검색버튼 start -->
       <div class="top_title_and_search">
         <h1 class="top_title">강의평가</h1>
         <form action="" method="get" class="top_text_search">
@@ -72,11 +68,15 @@
           <input type="submit" value="글쓰기" class="top_btn">
         </form>
       </div>
+			<!-- 강의 평가와 검색 버튼 end -->
+			<!-- 스크롤바 있는 네모 start-->
       <div class="top_text_list">
 				<div class="eval_main_item">
           <ul>
 						<li>
+							<!-- 첫번째 줄 start -->
 							<ul class="eval_main_study_line">
+								<!-- study link start -->
 								<a href="" class="eval_main_study_link">
 									<li class="eval_main_list">
 										<div class=eval_main_img1></div>
@@ -88,6 +88,7 @@
 										</div>
 									</li>
 								</a>
+								<!-- study link start -->
 								<a href="" class="eval_main_study_link">
 									<li class="eval_main_list">
 										<div class=eval_main_img2></div>
@@ -111,6 +112,7 @@
 									</li>
 								</a>
 							</ul>
+							<!-- 첫번째 줄 end -->
 						</li>
 
 						<li>
@@ -191,34 +193,9 @@
 					</ul>
 				</div>
       </div>
+			<!-- 스크롤바 있는 네모 end-->
     </div>
   </div>
 	<!-- //constents 영역 -->
-  <script>
-    const closeBtn = document.querySelector('.close_label');
-    const openBtn = document.querySelector('.open_label');
-    const sidebarMenu = document.querySelector('.sidebar_content')
-    const backgroundColor = document.querySelector('.background');
-    const mypageBtn = document.querySelector('.my_page');
-
-		openBtn.addEventListener('click', () => {
-		sidebarMenu.style.right = 0 + 'px'
-		backgroundColor.style.opacity = 1;
-		backgroundColor.style.visibility = 'visible';
-		})
-
-		closeBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-    
-		backgroundColor.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-
-  </script>
 </body>
 </html>
