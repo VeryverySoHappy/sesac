@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSAC || </title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../header/header.css">
+	<link rel="stylesheet" href="./게시판 비주얼.css">
+</head>
+<body>
+	<div class="wrap">
+		<input type="checkbox" id="sidebar">
+		<!-- 헤더 네비게이션 start-->
+		<header>
+			<div class="header_btn">
+				<a href="./index.html" class="home_btn">
+					<i class="fas fa-home fa-2x"></i>
+				</a>
+				<a href="./guest/login.html" class="my_page">
+					<i class="fas fa-user fa-2x" style="user-select: auto;"></i>
+				</a>
+				<label for="sidebar" class="menu open_label">
+					<i class="fas fa-bars fa-2x"></i>
+				</label>
+			</div>
+		</header>
+		<!-- 사이드바 메뉴 start--> 
+		<div class="sidebar_content">
+			<ul class="sidebar_wrap">
+				<li class="sidebar_list">
+					<ul class="sidebar_btns">
+						<li class="sidebar_btn"><a href=""><i class="fas fa-user fa-2x" style="user-select: auto;"></i></a></li>
+						<li class="sidebar_btn">
+							<label for="closeBtn" class="close_label">
+								<i class="fas fa-times fa-2x" style="user-select: auto;"></i>
+							</label>
+							<input type="checkbox" id="closeBtn" class="close_btn">
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar_list"><a href="#">자유게시판</a></li>
+				<li class="sidebar_list"><a href="#">PROJECT</a></li>
+				<li class="sidebar_list"><a href="#">강의평가</a></li>
+				<li class="bottom">
+					<div>Team BigDoor</div>
+					<a href="#">
+						<img src="" alt="팀 로고">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- <label for="sidebar"></label> -->
+	<!-- 사이드바 메뉴 end-->
+	
+	<!-- 메뉴 눌렀을때 배경부분 어두운 색으로 바뀌는 영역 -->
+	<div class="background"></div>
+	<!--  메뉴 눌렀을때 배경부분 영역 -->
+
+	<!-- inner start -->
+		<div class="inner">
+			<div class="visual__wrap">
+				<div class="visual__title">
+        <div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
+        <span class="visual__title_name">익명</span>
+        <span class="visual__title_tit">익숙한 새벽 세시</span>
+        <button class="detail_btn">• • •</button>
+      </div>
+      <div>
+        <label for="visual__text">
+          <textarea name="viusal__text" id="visual__text" cols="30" rows="10">
+거리를 걷고 또 친구를 만나고 많이 웃는 하루를 보내도
+오늘도 나는 잠 못드는 이미 익숙한 새벽 세시
+          </textarea>
+        </label>
+			</div>
+      <form action="" method="get" class="visual__comment_wrap">
+				<span class="visual__comment">
+					<input type="checkbox" value="anonymity"><span class="visual__comment_name">익명</span>
+					<input type="text" placeholder="댓글을 입력하세요." class="visual__comment_text">
+				</span>
+        <input type="submit" value="제출" class="visual__comment_btn"></input>
+      </form>
+			<div class="visual__comment_list">
+				<div class="visual__comment_count">댓글<span>(3)</span></div>
+				<ul>
+					<li class="visual__comment_list1">
+						<div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
+						<span class="visual__comment_name">익명</span>
+						<p class="visual__comment_paragraph">일찍 자고 규칙적인 생활을 하는 사람이 됩시다...</p>
+						<button class="detail_btn">• • •</button>
+					</li>
+					<li class="visual__comment_list1">
+						<div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
+						<span class="visual__comment_name">익명</span>
+						<p class="visual__comment_paragraph">일찍 자고 규칙적인 생활을 하는 사람이 됩시다...</p>
+						<button class="detail_btn">• • •</button>
+					</li>
+					<li class="visual__comment_list1">
+						<div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
+						<span class="visual__comment_name">익명</span>
+						<p class="visual__comment_paragraph">일찍 자고 규칙적인 생활을 하는 사람이 됩시다...</p>
+						<button class="detail_btn">• • •</button>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- //constents 영역 -->
+  <script>
+    const closeBtn = document.querySelector('.close_label');
+    const openBtn = document.querySelector('.open_label');
+    const sidebarMenu = document.querySelector('.sidebar_content')
+    const backgroundColor = document.querySelector('.background');
+    const mypageBtn = document.querySelector('.my_page');
+
+		openBtn.addEventListener('click', () => {
+		sidebarMenu.style.right = 0 + 'px'
+		backgroundColor.style.opacity = 1;
+		backgroundColor.style.visibility = 'visible';
+		})
+
+		closeBtn.addEventListener('click', () => {
+    sidebarMenu.style.right = -405 + 'px'
+    backgroundColor.style.opacity = 0;
+    backgroundColor.style.visibility = 'hidden';
+    })
+    
+		backgroundColor.addEventListener('click', () => {
+    sidebarMenu.style.right = -405 + 'px'
+    backgroundColor.style.opacity = 0;
+    backgroundColor.style.visibility = 'hidden';
+    })
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.eval_main_item {
+  width: 670px;
+}
+
+.eval_main_study_line {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.eval_main_list {
+  width: 160px;
+  height: 202px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  margin-bottom: 60px;
+}
+
+.eval_main_img1 {
+  width: 54px;
+  height: 54px;
+  background-color: #709990;
+  border-radius: 10px;
+}
+
+.eval_main_img2 {
+  width: 54px;
+  height: 54px;
+  background-color: #b2d2cc;
+  border-radius: 10px;
+}
+
+.eval_main_img3 {
+  width: 54px;
+  height: 54px;
+  background-color: #092d1e;
+  border-radius: 10px;
+}
+
+.eval_main_title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  margin-top: 9px;
+}
+
+.eval_main_count {
+  display: block;
+  width: 113px;
+  height: 22px;
+  /* border: 1px solid #000; */
+  margin: 9px 0 50px 0;
+}
+
+.eval_main_reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.eval_main_more {
+  color: #8c8c8c;
+}
