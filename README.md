@@ -35,3 +35,5 @@ semibold의 글자 두께는 몇임?
 강의평가 main - eval_main_study_line {
     justify-content: space-between; 안 먹힘
 }
+
+박스쉐도우 방향
