@@ -8,9 +8,6 @@
 	<title>SSAC || </title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../로그인 후 header/로그인 후.css">
 </head>
 <body>
 	<div class="wrap">
@@ -78,31 +75,5 @@
 
   </div>
 	<!-- //constents 영역 -->
-  <script>
-    const closeBtn = document.querySelector('.close_label');
-    const openBtn = document.querySelector('.open_label');
-    const sidebarMenu = document.querySelector('.sidebar_content')
-    const backgroundColor = document.querySelector('.background');
-    const mypageBtn = document.querySelector('.my_page');
-
-		openBtn.addEventListener('click', () => {
-		sidebarMenu.style.right = 0 + 'px'
-		backgroundColor.style.opacity = 1;
-		backgroundColor.style.visibility = 'visible';
-		})
-
-		closeBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-    
-		backgroundColor.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-
-  </script>
 </body>
 </html>

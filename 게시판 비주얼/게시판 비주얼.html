@@ -8,10 +8,6 @@
 	<title>SSAC || </title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../header/header.css">
-	<link rel="stylesheet" href="./게시판 비주얼.css">
 </head>
 <body>
 	<div class="wrap">
@@ -64,6 +60,7 @@
 
 	<!-- inner start -->
 		<div class="inner">
+			<!-- 프로필, 제목 start -->
 			<div class="visual__wrap">
 				<div class="visual__title">
         <div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
@@ -71,6 +68,8 @@
         <span class="visual__title_tit">익숙한 새벽 세시</span>
         <button class="detail_btn">• • •</button>
       </div>
+			<!-- 프로필, 제목 end -->
+			<!-- 글 작성 공간 start -->
       <div>
         <label for="visual__text">
           <textarea name="viusal__text" id="visual__text" cols="30" rows="10">
@@ -79,6 +78,8 @@
           </textarea>
         </label>
 			</div>
+			<!-- 글작성 공간 end -->
+			<!-- 댓글 입력 공간 start -->
       <form action="" method="get" class="visual__comment_wrap">
 				<span class="visual__comment">
 					<input type="checkbox" value="anonymity"><span class="visual__comment_name">익명</span>
@@ -86,15 +87,18 @@
 				</span>
         <input type="submit" value="제출" class="visual__comment_btn"></input>
       </form>
+			<!-- 댓글 입력 공간 end -->
 			<div class="visual__comment_list">
 				<div class="visual__comment_count">댓글<span>(3)</span></div>
 				<ul>
+					<!-- 댓글 1 start -->
 					<li class="visual__comment_list1">
 						<div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
 						<span class="visual__comment_name">익명</span>
 						<p class="visual__comment_paragraph">일찍 자고 규칙적인 생활을 하는 사람이 됩시다...</p>
 						<button class="detail_btn">• • •</button>
 					</li>
+					<!-- 댓글 1 end -->
 					<li class="visual__comment_list1">
 						<div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
 						<span class="visual__comment_name">익명</span>
@@ -113,31 +117,5 @@
 		</div>
 	</div>
 	<!-- //constents 영역 -->
-  <script>
-    const closeBtn = document.querySelector('.close_label');
-    const openBtn = document.querySelector('.open_label');
-    const sidebarMenu = document.querySelector('.sidebar_content')
-    const backgroundColor = document.querySelector('.background');
-    const mypageBtn = document.querySelector('.my_page');
-
-		openBtn.addEventListener('click', () => {
-		sidebarMenu.style.right = 0 + 'px'
-		backgroundColor.style.opacity = 1;
-		backgroundColor.style.visibility = 'visible';
-		})
-
-		closeBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-    
-		backgroundColor.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-
-  </script>
 </body>
 </html>

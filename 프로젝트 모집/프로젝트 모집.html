@@ -8,10 +8,6 @@
 	<title>SSAC || </title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../로그인 후 header/로그인 후.css">
-	<link rel="stylesheet" href="./프로젝트모집.css">
 </head>
 <body>
 	<div class="wrap">
@@ -70,6 +66,7 @@
         <div class="profile"><img src="../img/루피.png" alt="applicant user img" class="profile_img"></div>
         <span class="applicant__name">익명</span>
       </div>
+			<!--  제목, 모집인원, 기간 end -->
 			<div class="applicant__project">
 				<div class=applicant__project_img></div>
 				<ul class="applicant__explains">
@@ -90,6 +87,8 @@
 					</li>
 				</ul>
 			</div>
+			<!--  제목, 모집인원, 기간 end -->
+			<!--  상세설명 start -->
 			<div>
 				<div class="applicant__detail">상세설명</div>
 				<label for="applicant__text">
@@ -99,34 +98,9 @@
 					</textarea>
 				</label>
 			</div>
+			<!-- 상세설명 end-->
     </div>
   </div>
 	<!-- //constents 영역 -->
-  <script>
-    const closeBtn = document.querySelector('.close_label');
-    const openBtn = document.querySelector('.open_label');
-    const sidebarMenu = document.querySelector('.sidebar_content')
-    const backgroundColor = document.querySelector('.background');
-    const mypageBtn = document.querySelector('.my_page');
-
-		openBtn.addEventListener('click', () => {
-		sidebarMenu.style.right = 0 + 'px'
-		backgroundColor.style.opacity = 1;
-		backgroundColor.style.visibility = 'visible';
-		})
-
-		closeBtn.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-    
-		backgroundColor.addEventListener('click', () => {
-    sidebarMenu.style.right = -405 + 'px'
-    backgroundColor.style.opacity = 0;
-    backgroundColor.style.visibility = 'hidden';
-    })
-
-  </script>
 </body>
 </html>
